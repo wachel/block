@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5375BA54-7B6E-435D-9E09-C00B364F626D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RayTrace</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;RAYTRACE_EXPORTS;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>SDK;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(TargetDir)*.dll $(ProjectDir)..\..\..\Assets\Plugins\*.* /E /D /Y
+xcopy $(TargetDir)*.pdb $(ProjectDir)..\..\..\Assets\Plugins\*.* /E /D /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;RAYTRACE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\core\Common\v2ObjStd.cpp" />
+    <ClCompile Include="..\src\core\Math2\MathUtility.cpp" />
+    <ClCompile Include="..\src\core\Math2\Matrix4x4_Reference.cpp" />
+    <ClCompile Include="..\src\core\Math2\Matrix4x4_SSE.cpp" />
+    <ClCompile Include="..\src\core\Math2\Vector4_Reference.cpp" />
+    <ClCompile Include="..\src\core\Math2\Vector4_SSE.cpp" />
+    <ClCompile Include="..\src\core\Math\AABB.cpp" />
+    <ClCompile Include="..\src\core\Math\fastmath.cpp" />
+    <ClCompile Include="..\src\core\Math\random.cpp" />
+    <ClCompile Include="..\src\core\Math\v2Math.cpp" />
+    <ClCompile Include="..\src\core\Math\v2MathCommon.cpp" />
+    <ClCompile Include="..\src\core\Math\v2Matrix4.cpp" />
+    <ClCompile Include="..\src\core\Math\v2Matrix4Util.cpp" />
+    <ClCompile Include="..\src\core\Math\v2Quaternion.cpp" />
+    <ClCompile Include="..\src\core\Math\v2SRT.cpp" />
+    <ClCompile Include="..\src\core\Math\v2Vector3.cpp" />
+    <ClCompile Include="..\src\core\Math\v2Vector4.cpp" />
+    <ClCompile Include="..\src\core\Object\tinystr.cpp" />
+    <ClCompile Include="..\src\core\Object\tinyxml.cpp" />
+    <ClCompile Include="..\src\core\Object\tinyxmlerror.cpp" />
+    <ClCompile Include="..\src\core\Object\tinyxmlparser.cpp" />
+    <ClCompile Include="..\src\core\Object\v2ObjBase.cpp" />
+    <ClCompile Include="..\src\core\Object\v2Object.cpp" />
+    <ClCompile Include="..\src\core\Object\v2ObjectDll.cpp" />
+    <ClCompile Include="..\src\core\Object\v2ObjectValue.cpp" />
+    <ClCompile Include="..\src\core\Object\VFileSystem.cpp" />
+    <ClCompile Include="..\src\core\Utility\DebugTool.cpp" />
+    <ClCompile Include="..\src\core\Utility\TimeTool.cpp" />
+    <ClCompile Include="..\src\core\Utility\v2String.cpp" />
+    <ClCompile Include="..\src\core\Utility\v2StringConverter.cpp" />
+    <ClCompile Include="..\src\core\Utility\v2Utility.cpp" />
+    <ClCompile Include="..\src\core\Utility\v2Uuid.cpp" />
+    <ClCompile Include="..\src\RayTraceInterface.cpp" />
+    <ClCompile Include="..\src\RayTrace\BalancedKDTree.cpp" />
+    <ClCompile Include="..\src\RayTrace\RandomPoints.cpp" />
+    <ClCompile Include="..\src\RayTrace\RayTrace.cpp" />
+    <ClCompile Include="..\src\RayTrace\RayTraceChunk.cpp" />
+    <ClCompile Include="..\src\RayTrace\RayTraceChunkManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\core\Common\v2Config.h" />
+    <ClInclude Include="..\src\core\Common\v2ObjStd.h" />
+    <ClInclude Include="..\src\core\Common\v2STL.h" />
+    <ClInclude Include="..\src\core\Common\v2TypeDef.h" />
+    <ClInclude Include="..\src\core\core.h" />
+    <ClInclude Include="..\src\core\Math2\FastMath.h" />
+    <ClInclude Include="..\src\core\Math2\MathDll.h" />
+    <ClInclude Include="..\src\core\Math2\MathUtility.h" />
+    <ClInclude Include="..\src\core\Math2\Matrix4x4.h" />
+    <ClInclude Include="..\src\core\Math2\Matrix4x4_Reference.h" />
+    <ClInclude Include="..\src\core\Math2\Matrix4x4_SSE.h" />
+    <ClInclude Include="..\src\core\Math2\Vector4.h" />
+    <ClInclude Include="..\src\core\Math2\Vector4_Reference.h" />
+    <ClInclude Include="..\src\core\Math2\Vector4_SSE.h" />
+    <ClInclude Include="..\src\core\Math\AABB.h" />
+    <ClInclude Include="..\src\core\Math\my_d3dx9math.h" />
+    <ClInclude Include="..\src\core\Math\random.h" />
+    <ClInclude Include="..\src\core\Math\v2AsmMath.h" />
+    <ClInclude Include="..\src\core\Math\v2Math.h" />
+    <ClInclude Include="..\src\core\Math\v2MathCommon.h" />
+    <ClInclude Include="..\src\core\Math\v2MathDll.h" />
+    <ClInclude Include="..\src\core\Math\v2Matrix4.h" />
+    <ClInclude Include="..\src\core\Math\v2Matrix4Util.h" />
+    <ClInclude Include="..\src\core\Math\v2Quaternion.h" />
+    <ClInclude Include="..\src\core\Math\v2SRT.h" />
+    <ClInclude Include="..\src\core\Math\v2Vector3.h" />
+    <ClInclude Include="..\src\core\Math\v2Vector4.h" />
+    <ClInclude Include="..\src\core\Object\tinystr.h" />
+    <ClInclude Include="..\src\core\Object\tinyxml.h" />
+    <ClInclude Include="..\src\core\Object\tinyxml_unicode.h" />
+    <ClInclude Include="..\src\core\Object\v2BinVisitor.h" />
+    <ClInclude Include="..\src\core\Object\v2BinVisitorImpl.h" />
+    <ClInclude Include="..\src\core\Object\v2ObjBase.h" />
+    <ClInclude Include="..\src\core\Object\v2Object.h" />
+    <ClInclude Include="..\src\core\Object\v2ObjectDll.h" />
+    <ClInclude Include="..\src\core\Object\v2ObjectValue.h" />
+    <ClInclude Include="..\src\core\Object\v2XmlVisitor.h" />
+    <ClInclude Include="..\src\core\Object\v2xmlvisitorImpl.h" />
+    <ClInclude Include="..\src\core\Object\VFileSystem.h" />
+    <ClInclude Include="..\src\core\Utility\DebugTool.h" />
+    <ClInclude Include="..\src\core\Utility\TimeTool.h" />
+    <ClInclude Include="..\src\core\Utility\v2String.h" />
+    <ClInclude Include="..\src\core\Utility\v2StringConverter.h" />
+    <ClInclude Include="..\src\core\Utility\v2Utility.h" />
+    <ClInclude Include="..\src\core\Utility\v2Uuid.h" />
+    <ClInclude Include="..\src\glew.h" />
+    <ClInclude Include="..\src\glxew.h" />
+    <ClInclude Include="..\src\RayTraceInterface.h" />
+    <ClInclude Include="..\src\RayTrace\BalancedKDTree.h" />
+    <ClInclude Include="..\src\RayTrace\RandomPoints.h" />
+    <ClInclude Include="..\src\RayTrace\RayTrace.h" />
+    <ClInclude Include="..\src\RayTrace\RayTraceChunk.h" />
+    <ClInclude Include="..\src\RayTrace\RayTraceChunkManager.h" />
+    <ClInclude Include="..\src\stdafx.h" />
+    <ClInclude Include="..\src\wglew.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

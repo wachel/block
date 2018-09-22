@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="RayTrace">
+      <UniqueIdentifier>{e1c0e2c2-7218-4c2d-82e3-367482b1b9b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{44cabb6f-4665-4a3e-a555-7fd61ad60567}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\Common">
+      <UniqueIdentifier>{6c6380fd-0410-41f0-b27e-57615724b0c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\Math">
+      <UniqueIdentifier>{dda5f768-0819-40fc-992f-73970ace8fe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\Math2">
+      <UniqueIdentifier>{ac9bfd03-3462-4351-93ef-ccb3e9411721}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\Object">
+      <UniqueIdentifier>{ca718ad8-a8d1-4788-9b9c-7b2a927019c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\Utility">
+      <UniqueIdentifier>{b9eafc6c-6727-49e9-a191-779a3bbe6128}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\core\Common\v2Config.h">
+      <Filter>core\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Common\v2ObjStd.h">
+      <Filter>core\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Common\v2STL.h">
+      <Filter>core\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Common\v2TypeDef.h">
+      <Filter>core\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math\AABB.h">
+      <Filter>core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math\my_d3dx9math.h">
+      <Filter>core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math\random.h">
+      <Filter>core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math\v2AsmMath.h">
+      <Filter>core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math\v2Math.h">
+      <Filter>core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math\v2MathCommon.h">
+      <Filter>core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math\v2MathDll.h">
+      <Filter>core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math\v2Matrix4.h">
+      <Filter>core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math\v2Matrix4Util.h">
+      <Filter>core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math\v2Quaternion.h">
+      <Filter>core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math\v2SRT.h">
+      <Filter>core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math\v2Vector3.h">
+      <Filter>core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math\v2Vector4.h">
+      <Filter>core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math2\FastMath.h">
+      <Filter>core\Math2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math2\MathDll.h">
+      <Filter>core\Math2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math2\MathUtility.h">
+      <Filter>core\Math2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math2\Matrix4x4.h">
+      <Filter>core\Math2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math2\Matrix4x4_Reference.h">
+      <Filter>core\Math2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math2\Matrix4x4_SSE.h">
+      <Filter>core\Math2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math2\Vector4.h">
+      <Filter>core\Math2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math2\Vector4_Reference.h">
+      <Filter>core\Math2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Math2\Vector4_SSE.h">
+      <Filter>core\Math2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Object\tinystr.h">
+      <Filter>core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Object\tinyxml.h">
+      <Filter>core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Object\tinyxml_unicode.h">
+      <Filter>core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Object\v2BinVisitor.h">
+      <Filter>core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Object\v2BinVisitorImpl.h">
+      <Filter>core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Object\v2ObjBase.h">
+      <Filter>core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Object\v2Object.h">
+      <Filter>core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Object\v2ObjectDll.h">
+      <Filter>core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Object\v2ObjectValue.h">
+      <Filter>core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Object\v2XmlVisitor.h">
+      <Filter>core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Object\v2xmlvisitorImpl.h">
+      <Filter>core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Object\VFileSystem.h">
+      <Filter>core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Utility\DebugTool.h">
+      <Filter>core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Utility\TimeTool.h">
+      <Filter>core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Utility\v2String.h">
+      <Filter>core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Utility\v2StringConverter.h">
+      <Filter>core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Utility\v2Utility.h">
+      <Filter>core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\Utility\v2Uuid.h">
+      <Filter>core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\core.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\RayTrace\BalancedKDTree.h">
+      <Filter>RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\RayTrace\RandomPoints.h">
+      <Filter>RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\RayTrace\RayTrace.h">
+      <Filter>RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\RayTrace\RayTraceChunk.h">
+      <Filter>RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\RayTrace\RayTraceChunkManager.h">
+      <Filter>RayTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\stdafx.h" />
+    <ClInclude Include="..\src\RayTraceInterface.h" />
+    <ClInclude Include="..\src\wglew.h" />
+    <ClInclude Include="..\src\glew.h" />
+    <ClInclude Include="..\src\glxew.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\core\Common\v2ObjStd.cpp">
+      <Filter>core\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Math\AABB.cpp">
+      <Filter>core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Math\fastmath.cpp">
+      <Filter>core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Math\random.cpp">
+      <Filter>core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Math\v2Math.cpp">
+      <Filter>core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Math\v2MathCommon.cpp">
+      <Filter>core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Math\v2Matrix4.cpp">
+      <Filter>core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Math\v2Matrix4Util.cpp">
+      <Filter>core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Math\v2Quaternion.cpp">
+      <Filter>core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Math\v2SRT.cpp">
+      <Filter>core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Math\v2Vector3.cpp">
+      <Filter>core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Math\v2Vector4.cpp">
+      <Filter>core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Math2\MathUtility.cpp">
+      <Filter>core\Math2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Math2\Matrix4x4_Reference.cpp">
+      <Filter>core\Math2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Math2\Matrix4x4_SSE.cpp">
+      <Filter>core\Math2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Math2\Vector4_Reference.cpp">
+      <Filter>core\Math2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Math2\Vector4_SSE.cpp">
+      <Filter>core\Math2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Object\tinystr.cpp">
+      <Filter>core\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Object\tinyxml.cpp">
+      <Filter>core\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Object\tinyxmlerror.cpp">
+      <Filter>core\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Object\tinyxmlparser.cpp">
+      <Filter>core\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Object\v2ObjBase.cpp">
+      <Filter>core\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Object\v2Object.cpp">
+      <Filter>core\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Object\v2ObjectDll.cpp">
+      <Filter>core\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Object\v2ObjectValue.cpp">
+      <Filter>core\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Object\VFileSystem.cpp">
+      <Filter>core\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Utility\DebugTool.cpp">
+      <Filter>core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Utility\TimeTool.cpp">
+      <Filter>core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Utility\v2String.cpp">
+      <Filter>core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Utility\v2StringConverter.cpp">
+      <Filter>core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Utility\v2Utility.cpp">
+      <Filter>core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Utility\v2Uuid.cpp">
+      <Filter>core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RayTrace\BalancedKDTree.cpp">
+      <Filter>RayTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RayTrace\RandomPoints.cpp">
+      <Filter>RayTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RayTrace\RayTraceChunk.cpp">
+      <Filter>RayTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RayTrace\RayTraceChunkManager.cpp">
+      <Filter>RayTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RayTrace\RayTrace.cpp">
+      <Filter>RayTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RayTraceInterface.cpp" />
+  </ItemGroup>
+</Project>

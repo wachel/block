@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &132054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 499822}
+  - 114: {fileID: 11475004}
+  m_Layer: 0
+  m_Name: ColorDefine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &499822
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.60228729, y: 4.32174301, z: -9.26640701}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11475004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d6a2875952f1a24ab9f59923f7e9e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorSand: {r: .816176474, g: .795068264, b: .510110319, a: 0}
+  colorTree0: {r: .395367533, g: .397058845, b: .274437726, a: 0}
+  colorTree1: {r: .296712786, g: .411764681, b: .311788559, a: 0}
+  colorTree2: {r: .485294104, g: .404575795, b: .192690313, a: 0}
+  colorLeaf0: {r: 0, g: .477941155, b: .0428497754, a: 0}
+  colorLeaf1: {r: .401115686, g: .514705896, b: 0, a: 0}
+  colorLeaf2: {r: .0457404256, g: .602941155, b: 0, a: 0}
+  DirtDry: {r: .808823526, g: .663711071, b: .446042389, a: 0}
+  DirtWet: {r: .411764681, g: .274370581, b: .12716262, a: 0}
+  Dirt0: {r: .485294104, g: .439274848, b: .181985289, a: 0}
+  Dirt1: {r: .199888185, g: .338235319, b: .0671496615, a: 0}
+  Dirt2: {r: .091783464, g: .536764741, b: .00789360702, a: 0}
+  WhiteStone: {r: .926470578, g: .926470578, b: .926470578, a: 0}
+  GrayStone: {r: .683823526, g: .683823526, b: .683823526, a: 0}
+  BlueStone: {r: .614619374, g: .685508847, b: .720588207, a: 0}
+  RedBrick: {r: .492647052, g: .181120232, b: .181120232, a: 0}
+  BlueBrick: {r: .328287184, g: .420325696, b: .485294104, a: 0}
+  GrayBrick: {r: .590091407, g: .595588207, b: .53865701, a: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: colorSand.r
+      value: .816176474
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorSand.g
+      value: .795068264
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorSand.b
+      value: .510110319
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorTree.r
+      value: .522058845
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorTree.g
+      value: .50855732
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorTree.b
+      value: .326286793
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorLeaf.r
+      value: .129191026
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorLeaf.g
+      value: .448529422
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorLeaf.b
+      value: .0032980137
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorTree0.r
+      value: .395367533
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorTree0.g
+      value: .397058845
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorTree0.b
+      value: .274437726
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorTree1.r
+      value: .296712786
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorTree1.g
+      value: .411764681
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorTree1.b
+      value: .311788559
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorTree2.r
+      value: .485294104
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorTree2.g
+      value: .404575795
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorTree2.b
+      value: .192690313
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorLeaf0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorLeaf0.g
+      value: .477941155
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorLeaf0.b
+      value: .0428497754
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorLeaf1.r
+      value: .401115686
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorLeaf1.g
+      value: .514705896
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorLeaf1.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorLeaf2.r
+      value: .0457404256
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorLeaf2.g
+      value: .602941155
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorLeaf2.b
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 132054}
+  m_IsPrefabParent: 1

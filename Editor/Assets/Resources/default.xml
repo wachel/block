@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NodeManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <seed>0</seed>
+  <baseX>0</baseX>
+  <baseY>0</baseY>
+  <nodeList>
+    <NodeWindow>
+      <pos>
+        <x>46</x>
+        <y>79</y>
+      </pos>
+      <node>
+        <value type="HeightOutput">
+          <HeightOutput>
+            <label>height</label>
+            <guid>21bf5eb3-903a-4604-8866-0a880f4e19d4</guid>
+            <inputs>
+              <string>cdb5df39-c0bf-470c-8857-5466a9fac1b6</string>
+            </inputs>
+            <scale>1</scale>
+            <bias>0</bias>
+          </HeightOutput>
+        </value>
+      </node>
+      <bNeedUpdate>false</bNeedUpdate>
+    </NodeWindow>
+    <NodeWindow>
+      <pos>
+        <x>299</x>
+        <y>52</y>
+      </pos>
+      <node>
+        <value type="NodePerlin">
+          <NodePerlin>
+            <label>generater0</label>
+            <guid>cdb5df39-c0bf-470c-8857-5466a9fac1b6</guid>
+            <inputs />
+            <scale>1</scale>
+            <bias>0</bias>
+            <size>100</size>
+            <octaveCount>4</octaveCount>
+            <localSeed>0</localSeed>
+            <curve>
+              <keys>
+                <Keyframe>
+                  <time>0</time>
+                  <value>0</value>
+                  <inTangent>0</inTangent>
+                  <outTangent>1</outTangent>
+                  <tangentMode>0</tangentMode>
+                </Keyframe>
+                <Keyframe>
+                  <time>1</time>
+                  <value>1</value>
+                  <inTangent>1</inTangent>
+                  <outTangent>0</outTangent>
+                  <tangentMode>0</tangentMode>
+                </Keyframe>
+              </keys>
+              <preWrapMode>ClampForever</preWrapMode>
+              <postWrapMode>ClampForever</postWrapMode>
+            </curve>
+          </NodePerlin>
+        </value>
+      </node>
+      <bNeedUpdate>false</bNeedUpdate>
+    </NodeWindow>
+  </nodeList>
+</NodeManager>

@@ -1,0 +1,17 @@
+package BlockData;
+
+message Model {
+  required int32 version = 1;
+  required int32 sizeX = 2;
+  required int32 sizeY = 3;
+  required int32 sizeZ = 4;
+  required int32 pivotX = 5;
+  required int32 pivotY = 6;
+  required int32 pivotZ = 7;
+  repeated BlockPair blocks = 8;
+}
+
+message BlockPair{ 
+  required int32 lenght = 1;
+  required int32 type = 2;
+}
